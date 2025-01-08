@@ -3,56 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Christian Tapia">
-    <meta name="description" content="Página web dedicada a la explicación y conceptos básicos de la programación distribuida.">
-    <title>Programación Distribuida</title>
+    <title>Cellairis - Productos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        main {
+        header img {
+            height: 30px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .banner {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .banner h1 {
+            margin: 0;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
             padding: 20px;
         }
-        footer {
-            background: #35424a;
-            color: #ffffff;
+        .product {
             text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            margin: 15px;
+        }
+        .product img {
+            width: 80px;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Programación Distribuida</h1>
+        <img src="https://via.placeholder.com/120x30?text=CELLAIRIS" alt="Cellairis Logo">
+        <nav>
+            <a href="#">Audífonos</a>
+            <a href="#">Cases</a>
+            <a href="#">Tecnología</a>
+            <a href="#">Tienda</a>
+            <a href="#">Crea Tu Case</a>
+        </nav>
+        <div>
+            <a href="#">Acceso / Registro</a>
+            <a href="#" style="margin-left: 10px;">🛒 $0,00</a>
+        </div>
     </header>
-    <main>
-        <p>
-            Bienvenido a esta página dedicada a la <strong>programación distribuida</strong>, una rama de la informática que 
-            se centra en el desarrollo de sistemas y aplicaciones capaces de ejecutarse en múltiples nodos o máquinas. 
-            Este paradigma permite la distribución de tareas y el procesamiento paralelo, haciendo posible la resolución 
-            de problemas complejos y la optimización de recursos en entornos distribuidos.
-        </p>
-        <p>
-            La programación distribuida es fundamental en áreas como computación en la nube, sistemas distribuidos, 
-            big data y redes de alta disponibilidad, facilitando el desarrollo de soluciones escalables y robustas.
-        </p>
-    </main>
+    <section class="banner">
+        <h1>Power Station y Power Bank</h1>
+    </section>
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="ACEFAST">
+            <p>ACEFAST</p>
+            <small>37 productos</small>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="AirPods">
+            <p>AirPods</p>
+            <small>7 productos</small>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="Audífonos">
+            <p>Audífonos</p>
+            <small>26 productos</small>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="Beats">
+            <p>Beats</p>
+            <small>6 productos</small>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="Cables y Cargadores">
+            <p>Cables y Cargadores</p>
+            <small>80 productos</small>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="Case">
+            <p>Case</p>
+            <small>794 productos</small>
+        </div>
+    </section>
     <footer>
-        <p>Creado por Christian Tapia - 2025</p>
+        <p>© 2025 Cellairis. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
